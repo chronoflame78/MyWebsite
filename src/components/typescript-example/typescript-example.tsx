@@ -1,4 +1,4 @@
-import { ChangeEventHandler } from "react";
+import { ChangeEventHandler, ChangeEvent } from "react";
 
 const func: (a: string, b: number, c: boolean) => void = (a, b, c) => {}
 
@@ -16,6 +16,7 @@ type SearchBoxProps = {
     className: string;
     placeholder?: string;
     onChangeHandler: ChangeEventHandler<HTMLInputElement>
+    //onChangeHandler: (event: ChangeEvent<HTMLInputElement>) => void
 }
 
 type CanadianAddress = {
