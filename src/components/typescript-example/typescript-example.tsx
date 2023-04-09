@@ -46,3 +46,7 @@ const SearchBox = ({className, placeHolder, onChangeHandler}: ISearchBoxProps) =
 )
 
 export default SearchBox;
+
+/*
+    const [monsters, setMonsters = useState<Monster[]>([])
+*/
