@@ -1,4 +1,5 @@
 import { ChangeEventHandler, ChangeEvent } from "react";
+import { AnyAction } from "redux";
 
 const func: (a: string, b: number, c: boolean) => void = (a, b, c) => {}
 
@@ -56,3 +57,20 @@ export enum CATEGORIES_ACTION_TYPES {
     FETCH_CATEGORIES_SUCCESS = 'category/FETCH_CATEGORIES_SUCCESS',
     FETCH_CATEGORIES_FAILED = 'category/FETCH_CATEGORIES_FAILED',
 };
+
+export type ActionWithPayload<T, P> = {
+    type: T,
+    payload: P
+};
+
+export type Action<T> = {
+    type: T
+}
+
+export function createAction<T extends string, P>(type: T, payload: P): ActionWithPayload<T, P>;
+
+export function createAction<T extends string, P>(type: T, payload: void): Action<T>;
+
+export function createAction<T extends string, P>(type: T, payload: P) {
+    return {type, payload};
+}
