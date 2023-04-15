@@ -74,3 +74,19 @@ export function createAction<T extends string, P>(type: T, payload: void): Actio
 export function createAction<T extends string, P>(type: T, payload: P) {
     return {type, payload};
 }
+
+
+export const FetchCategoriesStart = Action<CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_START>
+
+export type CategoryItems = {
+    id: number,
+    imageUrl: string,
+    name: string,
+    price: number
+}
+
+export type Category = {
+    title: string,
+    imageUrl: string,
+    items: CategoryItems[]
+}
