@@ -49,3 +49,29 @@ var lengthOfLongestSubstring = function(s) {
     //This is because the function uses a hash table to store the last index of each character in the current substring.
     //In the best case, when all the characters in the input string are the same, the size of the hash table is constant, so the space complexity is O(1).
 };
+
+
+//https://leetcode.com/problems/median-of-two-sorted-arrays/
+/**
+ * @param {number[]} nums1
+ * @param {number[]} nums2
+ * @return {number}
+ */
+var findMedianSortedArrays = function(nums1, nums2) {
+    //the space complexity of the function is O(N), 
+    //where N is the total length of both input arrays.
+    //The time complexity of the sorting algorithm used in JavaScript is O(N*log(N))
+    //the time complexity of the function is O(N*log(N)), 
+    //where N is the total length of both input arrays.
+
+    let nums3 = [...nums1, ...nums2];
+    nums3 = nums3.sort(function(a, b){return b - a})
+    if(nums3.length % 2 !== 0){
+        return nums3[Math.floor(nums3.length/2)];
+    }
+    else{
+        let a = nums3[Math.floor(nums3.length/2)];
+        let b = nums3[Math.floor(nums3.length/2 - 1)];
+        return (a+b)/2;
+    }
+};
