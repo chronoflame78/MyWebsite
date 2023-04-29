@@ -75,3 +75,40 @@ var findMedianSortedArrays = function(nums1, nums2) {
         return (a+b)/2;
     }
 };
+
+//https://leetcode.com/problems/longest-palindromic-substring/
+
+/**
+ * @param {string} s
+ * @return {string}
+ */
+var longestPalindrome = function(s) {
+    let maxPalindrome = '';
+    for (let i = 0; i < s.length; i++) {
+        // Check for odd-length palindromes
+        let l = i, r = i;
+        while (l >= 0 && r < s.length && s[l] === s[r]) {
+            let currPalindrome = s.substring(l, r + 1);
+            if (currPalindrome.length > maxPalindrome.length) {
+                maxPalindrome = currPalindrome;
+            }
+            l--;
+            r++;
+        }
+        
+        // Check for even-length palindromes
+        l = i;
+        r = i + 1;
+        while (l >= 0 && r < s.length && s[l] === s[r]) {
+            let currPalindrome = s.substring(l, r + 1);
+            if (currPalindrome.length > maxPalindrome.length) {
+                maxPalindrome = currPalindrome;
+            }
+            l--;
+            r++;
+        }
+    }
+    return maxPalindrome;
+    //This solution has a time complexity of O(n^2), where n is the length of the input string, because it checks all possible substrings of the string.
+    //The space complexity of the function is O(1), which means that it uses a constant amount of extra space regardless of the size of the input string s.
+};
