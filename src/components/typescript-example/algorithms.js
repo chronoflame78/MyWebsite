@@ -112,3 +112,30 @@ var longestPalindrome = function(s) {
     //This solution has a time complexity of O(n^2), where n is the length of the input string, because it checks all possible substrings of the string.
     //The space complexity of the function is O(1), which means that it uses a constant amount of extra space regardless of the size of the input string s.
 };
+
+
+//https://leetcode.com/problems/reverse-integer/
+
+/**
+ * @param {number} x
+ * @return {number}
+ */
+var reverse = function(x) {
+    if(x > (Math.pow(2, 31) - 1)) return 0;
+    if(x < Math.pow(-2, 31)) return 0;
+    const str = `${x}`;
+    let subStr = '';
+    if(str[0] === '-'){
+        subStr = str.slice(1, str.length);
+        subStr = subStr.split("").reverse().join("");
+        if((parseInt(subStr) * -1) > (Math.pow(2, 31) - 1)) return 0;
+        if((parseInt(subStr) * -1) < Math.pow(-2, 31)) return 0;
+        return parseInt(subStr) * -1;
+    }
+    else{
+        let result = parseInt(str.split("").reverse().join(""));
+        if(result > (Math.pow(2, 31) - 1)) return 0;
+        if(result < Math.pow(-2, 31)) return 0;
+        return result;
+    }
+};
