@@ -139,3 +139,17 @@ var reverse = function(x) {
         return result;
     }
 };
+
+//https://leetcode.com/problems/palindrome-number/
+/**
+ * @param {number} x
+ * @return {boolean}
+ */
+var isPalindrome = function(x) {
+    if(x < 0) return false;
+    if(x < 10) return true;
+    const text = x.toString();
+    const reverseText = text.split("").reverse().join("");
+    if(text === reverseText) return true;
+    return false;
+};
