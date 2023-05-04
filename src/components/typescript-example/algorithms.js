@@ -212,3 +212,42 @@ var romanToInt = function(s) {
   return total;
 
 };
+
+//https://leetcode.com/problems/longest-common-prefix/
+/**
+ * @param {string[]} strs
+ * @return {string}
+ */
+var longestCommonPrefix = function(strs) {
+
+    if(strs.length < 2) {
+        return strs[0];
+    }
+
+    const matchTwoStr = (str1,str2)=>{
+        let matched = "";
+        let counter = 0;
+        while(counter < str1.length || counter < str2.length) {
+            if(str1[counter] === str2[counter]) {
+                matched += str1[counter];
+                counter++;
+            } else {
+                break;
+            }
+        }
+        return matched;
+    }
+
+    let base = matchTwoStr(strs[0], strs[1]);
+    if(strs.length ===2) {
+        return base;
+    }
+    let result = "";
+    for(let i = 2;i < strs.length;i++) { 
+        result = matchTwoStr(base, strs[i]);
+
+        base = matchTwoStr(base, strs[i])
+    }
+    return result;
+    
+};
