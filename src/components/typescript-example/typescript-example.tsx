@@ -76,9 +76,9 @@ export function createAction<T extends string, P>(type: T, payload: P) {
 }
 
 
-export const FetchCategoriesStart = Action<CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_START>
+export type FetchCategoriesStart = Action<CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_START>
 
-export type CategoryItems = {
+export type CategoryItem = {
     id: number,
     imageUrl: string,
     name: string,
@@ -88,5 +88,15 @@ export type CategoryItems = {
 export type Category = {
     title: string,
     imageUrl: string,
-    items: CategoryItems[]
+    items: CategoryItem[]
+}
+
+export type CategoriesState = {
+    readonly categories: Category[];
+    readonly isLoading: boolean;
+    readonly error: Error | null
+}
+
+export type CategoryMap = {
+    [key: string]: CategoryItem[]
 }
