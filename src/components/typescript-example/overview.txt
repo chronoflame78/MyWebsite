@@ -1,0 +1,8 @@
+React And Javascript Overview
+
+Javascript
+1. What is Javascript?
+JavaScript is a programming language used to create interactive and dynamic web applications. It can be used both on the client-side and server-side. JavaScript is known for its flexibility and versatility, making it a popular choice for web development.
+
+- What is dynamic in “dynamic web application”?
+In the context of web applications, "dynamic" refers to the ability of a web page or application to respond to user interactions or changes in data without requiring a page refresh.
