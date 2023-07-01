@@ -6,3 +6,21 @@ JavaScript is a programming language used to create interactive and dynamic web 
 
 - What is dynamic in “dynamic web application”?
 In the context of web applications, "dynamic" refers to the ability of a web page or application to respond to user interactions or changes in data without requiring a page refresh.
+
+2. Data types
+Primitive: (primitive this case means basic)
+ - Number
+ - String
+ - Boolean
+ - null
+ - undefined
+ - Symbol
+The Symbol data type represents a unique identifier.
+const mySymbol = Symbol();
+const anotherSymbol = Symbol();
+console.log(mySymbol === anotherSymbol); // false
+- BigInt
+The BigInt type is a numeric primitive in JavaScript that can represent integers with arbitrary magnitude. With BigInts, you can safely store and operate on large integers even beyond the safe integer limit ( Number.MAX_SAFE_INTEGER ) for Numbers.
+
+Reference types:
+ -Object (array, function - sub types)
