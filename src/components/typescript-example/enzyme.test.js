@@ -9,6 +9,27 @@ it("expect to render Card component", () => {
 })
 
 
+//test components that have props
+// it("expect to render CardList component", () => {
+//     const mockRobot = [
+//         {
+//             id: 1,
+//             name: "Hok"
+//         }
+//     ]
+//     expect(shallow(<CardList mockRobot={mockRobot}/>)).toMatchSnapshot();
+// })
+
+
+
+// test stateful components
+// it("correctly increments the counter", () => {
+//     const wrapper = shallow(<CounterButton/>);
+//     wrapper.find('[id="counter"]').simulate('click');
+//     expect(wrapper.state()).toEqual({count: 1});
+// })
+
+
 //enzyme enable us to render component in test environment
 
 //shallow dont render child components inside that component
