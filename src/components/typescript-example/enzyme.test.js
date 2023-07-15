@@ -39,3 +39,9 @@ it("expect to render Card component", () => {
 //mount does a static rendering
 
 //npm test -- --coverage  -> show coverage report
+
+// describe('searchRobots', () => {
+//     it("should return the initial state", () => {
+//         expect(reducers.searchRobots(undefined, {})).toEqual({searchFields: ''});
+//     })
+// })
