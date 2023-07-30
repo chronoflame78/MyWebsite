@@ -1,4 +1,4 @@
-import { Location, redirect, useLocation, useNavigate } from "react-router-dom";
+import { Link, Location, redirect, useLocation, useNavigate } from "react-router-dom";
 import classNames from "classnames";
 import { ABOUT_PATH, CONTACT_PATH, HOME_PATH } from "../../utils/constant";
 import * as SVGComponents from "../../styles/svgIcons";
@@ -24,19 +24,19 @@ function TopPane(props) {
       <div className="top-pane-nav">
         <ul className="navbar-ul">
           <li className={classNames("nav-item mr-2", {"active": pathname === HOME_PATH})}>
-            <a className="nav-link" href={HOME_PATH}>
+            <Link className="nav-link" to={HOME_PATH}>
               Home
-            </a>
+            </Link >
           </li>
           <li className={classNames("nav-item mr-2", {"active": pathname === ABOUT_PATH})}>
-            <a className="nav-link" href={ABOUT_PATH}>
+            <Link  className="nav-link" to={ABOUT_PATH}>
               About
-            </a>
+            </Link >
           </li>
           <li className={classNames("nav-item", {"active": pathname === CONTACT_PATH})}>
-            <a className="nav-link" href={CONTACT_PATH}>
+            <Link  className="nav-link" to={CONTACT_PATH}>
               Contact
-            </a>
+            </Link >
           </li>
         </ul>
       </div>
