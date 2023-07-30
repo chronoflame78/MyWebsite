@@ -444,7 +444,7 @@ body {
 }
 
 .text-black{
-  color: #212529!important;
+  color: $black!important;
 }
 
 .px-10{
@@ -553,4 +553,28 @@ body {
 .py-12{
   padding-top: 0.75rem !important;
   padding-bottom: 0.75rem !important;
+}
+
+.f-18{
+  font-size: 1,125rem;
+}
+
+.f-20{
+  font-size: 1.25rem;
+}
+
+.f-32{
+  font-size: 2rem;
+}
+
+.f-60{
+  font-size: 2.75rem;
+}
+
+.f-90{
+  font-size: 5.625rem;
+}
+
+.h-cursor{
+  cursor: pointer;
 }

@@ -1,10 +1,29 @@
 .top-pane{
+    .leo-icon{
+        width: 50px;
+        height: 64px;
+    }
     .top-pane-nav{
         .navbar-ul{
             display: flex;
             align-items: center;
             list-style: none;
             margin-bottom: 0;
+            
+            .nav-item{
+                .nav-link{
+                    color: $black;
+                    font-weight: 500;
+                    height: 64px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                &.active, &:hover{
+                    border-bottom: 4px solid $primary-4;
+                    margin-bottom: -4px;
+                }
+            }
         }
     }
 }
