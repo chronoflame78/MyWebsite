@@ -13,7 +13,7 @@ function TopPane(props) {
   }
 
   return (
-    <nav className="top-pane container d-flex align-items-center justify-content-between py-4">
+    <nav className="top-pane container d-flex align-items-center justify-content-between">
       <div className="h-cursor" onClick={() => redirectToHomePage()}>
         <SVGComponents.IconLeo className="leo-icon mr-2"/>
         <span className="f-20 font-weight-bold primary-color-2">Leo</span>

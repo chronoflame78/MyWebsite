@@ -578,3 +578,14 @@ body {
 .h-cursor{
   cursor: pointer;
 }
+
+.btn-primary-custom{
+  width: fit-content;
+  border-radius: 40px;
+  background-color: $primary-4;
+  color: #ffffff;
+  &:hover{
+    color: #ffffff;
+    background-color: $primary;
+  }
+}
