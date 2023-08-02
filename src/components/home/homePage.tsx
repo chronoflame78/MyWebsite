@@ -52,17 +52,22 @@ function HomePage() {
                 <SVGComponents.LogoSass className="sass-logo"/>
               </div>
             </div>
-            <div className="shape-1">
-
-              <SVGComponents.Shape1 />
-
-            </div>
+            
             
           </div>
 
         </div>
         
         
+      </div>
+      <div className="shape1-container">
+        <SVGComponents.Shape1 className="shape1-svg" />
+      </div>
+      <div className="shape2-container">
+        <SVGComponents.Shape2 className="shape2-svg" />
+      </div>
+      <div className="shape3-container">
+        <SVGComponents.Shape3 className="shape3-svg" />
       </div>
     </>
   )

@@ -1,0 +1,51 @@
+.about-page-wrapper{
+    height: calc(100vh - 94px);
+
+    .card-item{
+        width: 200px;
+        height: 200px;
+        background-color: #ffffff;
+        border: 2px solid #e7e2e2;
+    }
+
+
+
+
+}
+
+.shape1-container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+
+    .shape1-svg{
+        height: 100%;
+    }
+}
+
+.shape2-container{
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    height: 100%;
+
+    .shape2-svg{
+        height: 100%;
+    }
+}
+
+.shape3-container{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+
+    .shape3-svg{
+        height: 100%;
+    }
+}

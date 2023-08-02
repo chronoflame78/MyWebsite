@@ -79,15 +79,45 @@ export const LogoSass = props => (
 )
 
 export const Shape1 = props => (
-	<svg width="1038" height="938" viewBox="0 0 1038 938" fill="none" {...props}>
+	<svg viewBox="0 0 1038 938" fill="none" {...props}>
 		<g opacity="0.5" filter="url(#filter0_f_39_4392)">
-			<circle cx="290.5" cy="282.5" r="247.5"></circle>
+			<circle cx="290.5" cy="282.5" r="247.5" fill="#ff4155"></circle>
 		</g>
 		<defs>
 			<filter id="filter0_f_39_4392" x="-457" y="-465" width="1495" height="1495" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 				<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
 				<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
 				<feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_39_4392"></feGaussianBlur>
+			</filter>
+		</defs>
+		</svg>
+)
+
+export const Shape2 = props => (
+	<svg width="1295" height="938" viewBox="0 0 1295 938" fill="none" {...props}>
+		<g opacity="0.4" filter="url(#filter0_f_39_4393)">
+		<circle cx="647.5" cy="561.5" r="247.5" fill="#ffe600"></circle>
+		</g>
+		<defs>
+			<filter id="filter0_f_39_4393" x="0" y="-86" width="1295" height="1295" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+			<feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_39_4393"></feGaussianBlur>
+			</filter>
+		</defs>
+		</svg>
+)
+
+export const Shape3 = props => (
+	<svg width="752" height="747" viewBox="0 0 752 747" fill="none" {...props}>
+		<g opacity="0.45" filter="url(#filter0_f_39_4394)">
+		<circle cx="647.5" cy="99.5" r="247.5" fill="#48c5ea"></circle>
+		</g>
+		<defs>
+			<filter id="filter0_f_39_4394" x="0" y="-548" width="1295" height="1295" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+				<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+				<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+				<feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_39_4394"></feGaussianBlur>
 			</filter>
 		</defs>
 		</svg>
