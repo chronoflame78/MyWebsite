@@ -556,7 +556,7 @@ body {
 }
 
 .f-18{
-  font-size: 1,125rem;
+  font-size: 1.125rem;
 }
 
 .f-20{
@@ -592,4 +592,8 @@ body {
     color: #ffffff;
     background-color: $primary;
   }
+}
+
+.height-100vh {
+  height: 100vh;
 }
