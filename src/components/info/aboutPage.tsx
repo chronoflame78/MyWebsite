@@ -1,9 +1,7 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import myImage from '../../assets/leo_image2.png';
 import { Location, useLocation, useNavigate } from "react-router-dom";
 import * as SVGComponents from "../../styles/svgIcons";
+import CardItem from "./cardItem";
+import { cardItems } from "./constant";
 
 function AboutPage() {
   const location: Location = useLocation();
@@ -14,8 +12,8 @@ function AboutPage() {
   }
 
     return (
-      <>
-      <div className="container d-flex align-items-center about-page-wrapper pt-4">
+    <div className="about-page-wrapper">
+      <div className="container d-flex align-items-center sub-page-wrapper">
         <div className="w-100 d-flex flex-direction-column pt-4">
           
             <div>
@@ -26,52 +24,10 @@ function AboutPage() {
 
             <div className="flex-fill pl-4">
               <div className="d-flex align-items-center justify-content-between p-3 mb-4">
-                <div className="card-item py-4">
-                  <div>
-                    <SVGComponents.LogoReact className="logo-react"/>
-                  </div>
-                  <div className="f-20 font-weight-bold">
-                    React
-                  </div>
-                </div>
-                <div className="card-item py-4">
-                  <div>
-                    <SVGComponents.LogoJS className="logo-javascript"/>
-                  </div>
-                  <div className="f-20 font-weight-bold">
-                    Javascript
-                  </div>
-                </div>
-                <div className="card-item py-4">
-                  <div>
-                    <SVGComponents.LogoTS className="logo-typescript"/>
-                  </div>
-                  <div className="f-20 font-weight-bold">
-                    Typescript
-                  </div>
-                </div>
-                <div className="card-item py-4">
-                  <div>
-                    <SVGComponents.LogoRedux className="logo-redux"/>
-                  </div>
-                  <div className="f-20 font-weight-bold">
-                    Redux
-                  </div>
-                </div>
+                {cardItems.slice(0, 4).map((x, index) => <CardItem key={index} itemName={x.itemName} logo={x.logo}/>)}
               </div>
               <div className="d-flex align-items-center justify-content-between p-3">
-                <div className="card-item py-4">
-
-                </div>
-                <div className="card-item py-4">
-
-                </div>
-                <div className="card-item py-4">
-
-                </div>
-                <div className="card-item py-4">
-
-                </div>
+                {cardItems.slice(4, 8).map((x, index) => <CardItem key={index} itemName={x.itemName} logo={x.logo}/>)}
               </div>
             </div>
           
@@ -80,7 +36,7 @@ function AboutPage() {
         
         
       </div>
-      <div className="container d-flex align-items-center about-page-wrapper height-100vh pt-4">
+      <div className="container d-flex align-items-center sub-page-wrapper">
         <div className="w-100 d-flex flex-direction-column pt-4 align-items-center">
           
             
@@ -96,16 +52,10 @@ function AboutPage() {
         
         
       </div>
-      {/* <div className="shape1-container">
-        <SVGComponents.Shape1 className="shape1-svg" />
-      </div>
-      <div className="shape2-container">
-        <SVGComponents.Shape2 className="shape2-svg" />
-      </div> */}
       <div className="shape3-container">
         <SVGComponents.Shape3 className="shape3-svg" />
       </div>
-    </>
+    </div>
     )
   }
   

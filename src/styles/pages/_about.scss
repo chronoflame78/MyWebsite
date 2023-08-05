@@ -1,5 +1,8 @@
 .about-page-wrapper{
-    height: calc(100vh - 94px);
+    .sub-page-wrapper{
+        padding-top: 94px;
+        height: 100vh;
+    }
 
     .text-gray{
         color: #ababab;
@@ -22,7 +25,7 @@
         color: #9999A1;
         box-shadow: 0px 35px 120px -35px #1f1f1f;
         cursor: pointer;
-        .logo-react, .logo-javascript, .logo-typescript, .logo-redux{
+        .logo-react, .logo-javascript, .logo-typescript, .logo-redux, .logo-html, .logo-css, .logo-jest, .logo-git{
             width: 64px;
             height: 64px;
         }
