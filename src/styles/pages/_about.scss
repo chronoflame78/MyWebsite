@@ -1,7 +1,13 @@
 .about-page-wrapper{
-    .sub-page-wrapper{
+    .skills-section{
         padding-top: 94px;
         height: 100vh;
+    }
+
+    .experience-section{
+        padding-top: 94px;
+        height: 100vh;
+        background-color: #f8f8f8;
     }
 
     .text-gray{
@@ -37,9 +43,42 @@
                 animation: rotate 2s linear infinite; 
             }
         }
-        
+    }
 
-        
+    .we-item{
+        width: 100%;
+        padding: 20px 70px;
+        background: #fff;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 10px rgba(14,29,44,.15);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:hover{
+            box-shadow: 0 2px 10px #138aa9;
+        }
+
+        .period-txt{
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .company-txt{
+            font-size: 15px;
+            color: #dd584f;
+        }
+
+        .position-txt{
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .website-link{
+            color: $black;
+            font-weight: bold;
+        }
     }
 
 

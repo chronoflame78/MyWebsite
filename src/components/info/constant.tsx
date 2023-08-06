@@ -1,6 +1,6 @@
 import * as SVGComponents from "../../styles/svgIcons";
 
-export const cardItems = [
+export const skillItems = [
     {
       itemName: "React",
       logo: <SVGComponents.LogoReact className="logo-react"/>
@@ -33,4 +33,28 @@ export const cardItems = [
       itemName: "Git",
       logo: <SVGComponents.LogoGit className="logo-git"/>
     }
-  ]
+]
+
+export const workExperienceItems = [
+  {
+    period: "2019 - 2020",
+    logo: <SVGComponents.LogoFPTSoftware className="logo-fpt"/>,
+    position: "Intern Web Developer",
+    company: "FPT Software",
+    link: "https://fptsoftware.com/"
+  },
+  {
+    period: "2020 - 2021",
+    logo: <SVGComponents.LogoFPTSoftware className="logo-fpt"/>,
+    position: "Junior Front-end Developer",
+    company: "FPT Software",
+    link: "https://fptsoftware.com/"
+  },
+  {
+    period: "2021 - now",
+    logo: <SVGComponents.LogoKraken className="logo-kraken"/>,
+    position: "Front-end Developer",
+    company: "Kraken",
+    link: "https://www.krakenconnect.com/"
+  },
+]
