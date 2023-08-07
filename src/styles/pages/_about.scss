@@ -2,6 +2,36 @@
     .skills-section{
         padding-top: 94px;
         height: 100vh;
+
+        .mySwiper{
+            position: initial;
+        }
+
+        .swiper-button-prev {
+            left: -36px;
+            color: #138aa9;
+            transition: transform 0.5s linear;
+            &:after{
+                font-weight: bold;
+            }
+            &:hover{
+                color: $primary;
+                transform: scale(1.1, 1.1);
+            }
+        }
+
+        .swiper-button-next{
+            right: -36px;
+            color: #138aa9;
+            transition: transform 0.5s linear;
+            &:after{
+                font-weight: bold;
+            }
+            &:hover{
+                color: $primary;
+                transform: scale(1.1, 1.1);
+            }
+        }
     }
 
     .experience-section{
@@ -21,15 +51,22 @@
 
     .card-item{
         width: 248px;
-        height: 280px;
-        background-color: #323232;
+        height: 264px;
+
+        // background-color: #323232;
+        // color: #9999A1;
+        // box-shadow: 0px 15px 120px -35px #1f1f1f;
+
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px rgba(14,29,44,.15);
+
         border-radius: 25px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        color: #9999A1;
-        box-shadow: 0px 35px 120px -35px #1f1f1f;
+        
+        
         cursor: pointer;
         .logo-react, .logo-javascript, .logo-typescript, .logo-redux, .logo-html, .logo-css, .logo-jest, .logo-git{
             width: 64px;
@@ -60,24 +97,45 @@
             box-shadow: 0 2px 10px #138aa9;
         }
 
+        .w-300{
+            width: 300px;
+        }
+
+        .item-logo{
+            width: 140px;
+            .logo-kraken{
+                width: 140px;
+            }
+        }
+
         .period-txt{
             font-size: 24px;
             font-weight: bold;
         }
 
         .company-txt{
-            font-size: 15px;
+            font-size: 14px;
             color: #dd584f;
         }
 
         .position-txt{
-            font-size: 24px;
+            font-size: 22px;
             font-weight: bold;
         }
 
         .website-link{
             color: $black;
             font-weight: bold;
+
+            &:hover{
+                color: #138aa9;
+                .icon-arrow{
+                    --translateXValue: 6px;
+                    animation: translateXAnimation 0.5s linear forwards;
+                }
+            }
+
+            
         }
     }
 
@@ -113,14 +171,14 @@
     }
 }
 
-.shape3-container{
+.shape32-container{
     position: absolute;
     right: 0;
-    top: 0;
+    top: 100vh;
     z-index: -1;
     height: 100%;
 
-    .shape3-svg{
+    .shape32-svg{
         height: 100%;
         fill: #48c5ea;
     }
@@ -153,5 +211,14 @@
     }
     100% {
         transform: translateY(var(--translateYValue));
+    }
+}
+
+@keyframes translateXAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(var(--translateXValue));
     }
 }

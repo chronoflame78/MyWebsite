@@ -1,15 +1,11 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import myImage from '../../assets/leo_image2.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Location, useLocation, useNavigate } from "react-router-dom";
 import * as SVGComponents from "../../styles/svgIcons";
 import AboutPage from "../info/aboutPage";
 import ContactPage from "../contact/contact";
 import { useRef, useEffect } from "react";
 import { ABOUT_PATH, CONTACT_PATH, HOME_PATH } from "../../utils/constant";
-
-library.add(faArrowRight);
 
 function HomePage() {
   const location: Location = useLocation();
