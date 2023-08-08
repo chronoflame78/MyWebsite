@@ -66,13 +66,13 @@ function AboutPage() {
       </section>
       <section className="experience-section">
         <div className="container d-flex align-items-center">
-          <div className="w-100 d-flex flex-direction-column pt-4 pb-4 align-items-center">
+          <div className="w-100 d-flex flex-direction-column pt-4 pb-4">
             
               
-                <h2 className="f-48 font-weight-bold mb-4 text-center">My Work Experience</h2>
-                <p className="f-18 font-weight-bold pb-4 work-des-txt text-center">
-                  Must explain to you how all this mistaken idea of denouncing pleasure born and give you a complete account the system
-                </p>
+                <h2 className="f-48 font-weight-bold mb-5 text-center">My Work Experience</h2>
+                {/* <div className="f-18 font-weight-bold pb-4 d-flex align-items-center justify-content-center w-100">
+                  <p className="work-des-txt text-center">Must explain to you how all this mistaken idea of denouncing pleasure born and give you a complete account the system</p>
+                </div> */}
 
                 <div className="w-100">
                   {workExperienceItems.map((x, index) => (
@@ -92,6 +92,7 @@ function AboutPage() {
                     </div>
                   ))}
                 </div>
+                <h2 className="font-weight-bold f-32 pt-4">Recent Work</h2>
               
               
             
