@@ -1,13 +1,14 @@
 import { Location, useLocation, useNavigate } from "react-router-dom";
 import * as SVGComponents from "../../styles/svgIcons";
 import CardItem from "./cardItem";
-import { skillItems, workExperienceItems } from "./constant";
+import { recentWorkItems, skillItems, workExperienceItems } from "./constant";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -41,10 +42,7 @@ function AboutPage() {
                   delay: 2500,
                   disableOnInteraction: false,
                 }}
-                pagination={{
-                  clickable: true,
-                }}
-                modules={[Autoplay, Pagination, Navigation]}
+                modules={[Autoplay, Navigation]}
                 loop={true}
                 speed={1500}
                 className="mySwiper p-3">
@@ -92,8 +90,40 @@ function AboutPage() {
                     </div>
                   ))}
                 </div>
-                <h2 className="font-weight-bold f-32 pt-4">Recent Work</h2>
-              
+                <h2 className="font-weight-bold f-32 py-4">Recent Work.</h2>
+
+                <div className="w-100">
+                <Swiper
+                  slidesPerView={4}
+                  spaceBetween={36}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+                  pagination={{
+                    clickable: true,
+                    
+                  }}
+                  modules={[Pagination, Autoplay]}
+                  loop={false}
+                  speed={1500}
+                  className="re-Swiper">
+                  {
+                    recentWorkItems.map((x, index) => (
+                      <SwiperSlide>
+                          <div key={index} className="recent-work-item" onClick={() => {window.open(x.link, "_blank")}}>
+                            <div className="re-img-container">
+                              <img className="re-image" src={x.img} alt=""/>
+                            </div>
+                            <div className="pt-3 font-weight-bold text-center name-text">{x.name}</div>
+                          </div>
+                        
+                      </SwiperSlide>
+                    ))
+                  }
+                </Swiper>
+                </div>
+                
               
             
 
