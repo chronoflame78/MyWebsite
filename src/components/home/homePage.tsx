@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Location, useLocation, useNavigate } from "react-router-dom";
 import * as SVGComponents from "../../styles/svgIcons";
 import AboutPage from "../info/aboutPage";
-import ContactPage from "../contact/contact";
+import ContactPage from "../contact/contactPage";
 import { useRef, useEffect } from "react";
 import { ABOUT_PATH, CONTACT_PATH, HOME_PATH } from "../../utils/constant";
 

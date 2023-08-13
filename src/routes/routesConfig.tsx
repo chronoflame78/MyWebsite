@@ -5,7 +5,7 @@ import App from "../components/app/app";
 import ErrorPage from "../components/app/errorPage";
 import HomePage from "../components/home/homePage";
 import AboutPage from "../components/info/aboutPage";
-import ContactPage from "../components/contact/contact";
+import ContactPage from "../components/contact/contactPage";
   
 export const router = createBrowserRouter([
     {

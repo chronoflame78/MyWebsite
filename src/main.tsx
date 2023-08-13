@@ -7,8 +7,10 @@ import {
 import { router } from './routes/routesConfig';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faArrowRight, faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-library.add(faArrowRight, faChevronRight, faChevronLeft);
+import { faArrowRight, faChevronRight, faChevronLeft, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { fab, faLinkedin, faGithub, faSkype } from '@fortawesome/free-brands-svg-icons';
+
+library.add(faArrowRight, faChevronRight, faChevronLeft, faEnvelope, faLinkedin, faGithub, faSkype, fab);
 
 
 
