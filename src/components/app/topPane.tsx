@@ -9,6 +9,7 @@ import classNames from "classnames";
 import { ABOUT_PATH, CONTACT_PATH, HOME_PATH } from "../../utils/constant";
 import * as SVGComponents from "../../styles/svgIcons";
 import { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function TopPane(props) {
   const location: Location = useLocation();
@@ -38,13 +39,19 @@ function TopPane(props) {
   return (
     <div className="top-pane-container" style={{backgroundColor: navbarColor}}>
       <nav className="top-pane container d-flex align-items-center justify-content-between">
+        {/* <button className="menu-toggle-button" type="button">
+          <FontAwesomeIcon
+              className=""
+              icon="bars"
+              size="lg"
+              color="#ffffff"
+            />
+        </button> */}
         <div className="h-cursor" onClick={() => redirectToHomePage()}>
-          <SVGComponents.IconLeo className="leo-icon mr-2" />
-          <span className="f-20 font-weight-bold primary-color-2">Leo</span>
+          {/* <SVGComponents.IconLeo className="leo-icon mr-2" /> */}
+          <span className="f-20 font-weight-bold primary-color-2">Leo Nguyen</span>
         </div>
-        {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button> */}
+        
         <div className="top-pane-nav">
           <ul className="navbar-ul">
             <li
