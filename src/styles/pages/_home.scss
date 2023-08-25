@@ -1,12 +1,26 @@
 .home-page-wrapper{
     height: 100vh;
+    padding-top: 24px;
     .hello-text{
+        font-size: 60px;
         color: #b3a206;
     }
 
+    .name-text{
+        font-size: 90px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .title-text{
+        font-size: 32px;
+        padding-bottom: 24px;
+    }
+
     .description-text{
-        font-size: 1,1875rem;
+        font-size: 19px;
         line-height: 33px;
+        padding-bottom: 24px;
     }
 
     .main-image{
@@ -23,115 +37,67 @@
         }
     }
 
-    .react-logo-container{
+    .logo-container{
         display: flex;
         align-items: center;
         justify-content: center;
         width: 110px;
         height: 110px;
         position: absolute;
-        top: 0px;
-        left: 164px;
         background-color: #ffffff;
         border-radius: 25px;
         box-shadow: 0 2px 10px rgba(14,29,44,.15);
-    
+
         .bg-container{
             display: flex;
             align-items: center;
             justify-content: center;
             width: 70px;
             height: 70px;
-            background-color: #222;
             border-radius: 15px;
         }
-        .react-logo{
+
+        .react-logo, .redux-logo, .sass-logo{
             width: 50px;
             height: 50px;
         }
-    }
 
-    .js-logo-container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 110px;
-        height: 110px;
-        position: absolute;
-        top: 0px;
-        left: 566px;
-        background-color: #ffffff;
-        border-radius: 25px;
-        box-shadow: 0 2px 10px rgba(14,29,44,.15);
-    
-        .bg-container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 70px;
-            height: 70px;
-            border-radius: 15px;
-        }
         .js-logo{
             width: 70px;
             height: 70px;
             border-radius: 15px;
         }
+        
+    }
+
+    .react-logo-container{
+        top: 0px;
+        left: 164px;  
+        .bg-container{
+            background-color: #222;
+        }
+    }
+
+    .js-logo-container{
+        top: 0px;
+        left: 566px;
     }
 
     .redux-logo-container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 110px;
-        height: 110px;
-        position: absolute;
         top: 428px;
         left: 522px;
-        background-color: #ffffff;
-        border-radius: 25px;
-        box-shadow: 0 2px 10px rgba(14,29,44,.15);
     
         .bg-container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 70px;
-            height: 70px;
             background-color: #f7f7f7;
-            border-radius: 15px;
-        }
-        .redux-logo{
-            width: 50px;
-            height: 50px;
         }
     }
 
     .sass-logo-container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 110px;
-        height: 110px;
-        position: absolute;
         top: 342px;
         left: 144px;
-        background-color: #ffffff;
-        border-radius: 25px;
-        box-shadow: 0 2px 10px rgba(14,29,44,.15);
     
         .bg-container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 70px;
-            height: 70px;
             background-color: #CF649A;
-            border-radius: 15px;
-        }
-        .sass-logo{
-            width: 50px;
-            height: 50px;
         }
     } 
 }
@@ -179,5 +145,101 @@
         circle{
             fill: #48c5ea;
         }
+    }
+}
+
+@media (max-width: 992px) {
+    .home-page-wrapper{
+        height: auto;
+        align-items: center;
+        padding-top: 110px;
+
+        .row{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .info-container{
+            text-align: center;
+            .hello-text{
+                font-size: 35px;
+            }
+        
+            .name-text{
+                font-size: 45px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+        
+            .title-text{
+                font-size: 22px;
+                padding-bottom: 10px;
+            }
+        
+            .description-text{
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .button-container{
+                display: flex;
+                justify-content: center;
+            }
+        }   
+
+        .image-container{
+            padding-top: 40px;
+            display: flex;
+            justify-content: center;
+            .main-image{
+                width: 400px;
+                height: 400px;
+                position: static;
+            }
+        }
+    
+        .react-logo-container{
+            top: 56px;
+            left: 52px;
+        }
+
+        .js-logo-container{
+            top: 92px;
+            left: 360px;
+        }
+
+        .redux-logo-container{
+            top: 346px;
+            left: 320px;
+        }
+
+        .sass-logo-container{
+            top: 342px;
+            left: 64px;
+        }
+    
+        .logo-container{
+            width: 90px;
+            height: 90px;
+    
+            .bg-container{
+                width: 60px;
+                height: 60px;
+            }
+            .react-logo{
+                width: 40px;
+                height: 40px;
+            }
+    
+            .js-logo{
+                width: 60px;
+                height: 60px;
+                border-radius: 15px;
+            }
+            
+        }
+    }
+    .shape32-container{
+        display: none;
     }
 }
