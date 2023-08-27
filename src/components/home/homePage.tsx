@@ -55,7 +55,7 @@ function HomePage() {
               Front-end Developer with over 2 years of experience. Experienced with JavaScript and React framework.
             </div>
             <div className="button-container">
-              <button type="button" onClick={() => navigateToAbout()} className="f-18 btn btn-primary-custom font-weight-bold py-3 px-4 d-flex align-items-center">
+              <button type="button" onClick={() => navigateToAbout()} className="btn btn-primary-custom font-weight-bold d-flex align-items-center">
                 More about me <FontAwesomeIcon className="ml-3" icon="arrow-right" size="1x" color="#ffffff" />
               </button>
             </div>

@@ -153,6 +153,7 @@
         height: auto;
         align-items: center;
         padding-top: 110px;
+        padding-bottom: 36px;
 
         .row{
             margin-left: 0px;
@@ -177,6 +178,7 @@
             }
         
             .description-text{
+                font-size: 15px;
                 padding-left: 30px;
                 padding-right: 30px;
             }
@@ -192,54 +194,60 @@
             display: flex;
             justify-content: center;
             .main-image{
-                width: 400px;
-                height: 400px;
+                width: 300px;
+                height: 300px;
                 position: static;
             }
         }
     
         .react-logo-container{
             top: 56px;
-            left: 52px;
+            left: 82px;
         }
 
         .js-logo-container{
-            top: 92px;
-            left: 360px;
-        }
-
-        .redux-logo-container{
-            top: 346px;
+            top: 78px;
             left: 320px;
         }
 
+        .redux-logo-container{
+            top: 270px;
+            left: 286px;
+        }
+
         .sass-logo-container{
-            top: 342px;
-            left: 64px;
+            top: 240px;
+            left: 78px;
         }
     
         .logo-container{
-            width: 90px;
-            height: 90px;
+            width: 70px;
+            height: 70px;
+            border-radius: 15px;
     
             .bg-container{
-                width: 60px;
-                height: 60px;
+                width: 45px;
+                height: 45px;
+                border-radius: 10px;
             }
-            .react-logo{
-                width: 40px;
-                height: 40px;
+            .react-logo, .redux-logo, .sass-logo{
+                width: 30px;
+                height: 30px;
             }
     
             .js-logo{
-                width: 60px;
-                height: 60px;
-                border-radius: 15px;
+                width: 45px;
+                height: 45px;
+                border-radius: 10px;
             }
             
         }
     }
     .shape32-container{
         display: none;
+    }
+    .shape2-container{
+        left: 60%;
+        top: 536px;
     }
 }

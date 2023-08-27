@@ -587,17 +587,6 @@ body {
   cursor: pointer;
 }
 
-.btn-primary-custom{
-  width: fit-content;
-  border-radius: 40px;
-  background-color: $primary-4;
-  color: #ffffff;
-  &:hover{
-    color: #ffffff;
-    background-color: $primary;
-  }
-}
-
 .height-100vh {
   height: 100vh;
 }
@@ -608,4 +597,22 @@ body {
 
 .justify-content-around{
   justify-content: space-around;
+}
+
+.btn-primary-custom{
+  width: fit-content;
+  border-radius: 40px;
+  background-color: $primary-4;
+  color: #ffffff;
+  padding: 16px 24px;
+  font-size: 18px;
+  &:hover{
+    color: #ffffff;
+    background-color: $primary;
+  }
+
+  @include media-breakpoint-down(sm){
+    padding: 12px 18px;
+    font-size: 14px;
+  }
 }

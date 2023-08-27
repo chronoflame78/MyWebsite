@@ -176,46 +176,6 @@
 
 }
 
-.shape1-container{
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    height: 100%;
-
-    .shape1-svg{
-        height: 100%;
-        fill: #f4f4f6;
-    }
-}
-
-.shape2-container{
-    position: absolute;
-    left: 60%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    z-index: -1;
-    height: 100%;
-
-    .shape2-svg{
-        height: 100%;
-        fill: #f4f4f6;
-    }
-}
-
-.shape32-container{
-    position: absolute;
-    right: 0;
-    top: 100vh;
-    z-index: -1;
-    height: 100%;
-
-    .shape32-svg{
-        height: 100%;
-        fill: #48c5ea;
-    }
-}
-
 @keyframes moveUpDown {
     0% {
       transform: translateY(0);
