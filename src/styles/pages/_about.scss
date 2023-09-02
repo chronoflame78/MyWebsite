@@ -170,10 +170,19 @@
     .re-Swiper{
         padding-bottom: 48px;
     }
+}
 
+.shape32-container{
+    position: absolute;
+    right: 0;
+    top: 100vh;
+    z-index: -1;
+    height: 100%;
 
-
-
+    .shape32-svg{
+        height: 100%;
+        fill: #48c5ea;
+    }
 }
 
 @keyframes moveUpDown {

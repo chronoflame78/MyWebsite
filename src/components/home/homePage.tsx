@@ -90,7 +90,7 @@ function HomePage() {
         
         
       </div>
-      <div className="shape1-container">
+      {/* <div className="shape1-container">
         <SVGComponents.Shape1 className="shape1-svg" />
       </div>
       <div className="shape2-container">
@@ -98,7 +98,7 @@ function HomePage() {
       </div>
       <div className="shape3-container">
         <SVGComponents.Shape3 className="shape3-svg" />
-      </div>
+      </div> */}
       <div ref={aboutPageRef}>
         <AboutPage/>
       </div>

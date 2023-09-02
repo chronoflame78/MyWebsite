@@ -96,8 +96,8 @@ function ContactPage() {
     <div className="contact-page-wrapper">
       <section className="container contact-section">
         <h2 className="f-48 font-weight-bold pb-5">Contact.</h2>
-        <div className="d-flex">
-          <div className="w-60">
+        <div className="contact-section-content">
+          <div className="sub-section-1">
             <div className="form-container p-4 w-100">
               <div className="text-center f-24 font-weight-bold pb-4">
                 Get in touch
@@ -155,7 +155,7 @@ function ContactPage() {
               </form>
             </div>
           </div>
-          <div className="d-flex flex-direction-column w-40 pl-4">
+          <div className="d-flex flex-direction-column sub-section-2">
             <div className="download-resume-container p-4 mb-5">
               <div className="f-24 font-weight-bold text-center pb-4">
                 Download my resume
