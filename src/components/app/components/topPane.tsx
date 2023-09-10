@@ -6,8 +6,8 @@ import {
   useNavigate,
 } from "react-router-dom";
 import classNames from "classnames";
-import { ABOUT_PATH, CONTACT_PATH, HOME_PATH } from "../../utils/constant";
-import * as SVGComponents from "../../styles/svgIcons";
+import { ABOUT_PATH, CONTACT_PATH, HOME_PATH } from "../../../utils/constant";
+import * as SVGComponents from "../../../styles/svgIcons";
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

@@ -1,18 +1,24 @@
-import myImage from '../../assets/leo_image2.png';
+import myImage from '../../../assets/leo_image2.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Location, useLocation, useNavigate } from "react-router-dom";
-import * as SVGComponents from "../../styles/svgIcons";
-import AboutPage from "../info/aboutPage";
-import ContactPage from "../contact/contactPage";
+import * as SVGComponents from "../../../styles/svgIcons";
+import AboutPage from "../../info/containers/aboutPage";
+import ContactPage from "../../contact/containers/contactPage";
 import { useRef, useEffect } from "react";
-import { ABOUT_PATH, CONTACT_PATH, HOME_PATH } from "../../utils/constant";
+import { ABOUT_PATH, CONTACT_PATH, HOME_PATH } from "../../../utils/constant";
 
-function HomePage() {
+interface IProps {
+  isMobileView: boolean,
+}
+
+function HomePage(props: IProps) {
   const location: Location = useLocation();
   const { pathname } = location;
   const navigate = useNavigate();
   const aboutPageRef = useRef<HTMLDivElement>(null);
   const contactPageRef = useRef<HTMLDivElement>(null);
+
+  console.log(props.isMobileView)
 
   const navigateToAbout = () => {
     navigate("/about");
@@ -48,8 +54,8 @@ function HomePage() {
       <div className="container d-flex align-items-center home-page-wrapper">
         <div className="row w-100">
           <div className="d-flex flex-direction-column col-sm-12 info-container">
-            <h2 className="font-weight-bold hello-text">Hello,</h2>
-            <h2 className="font-weight-bold name-text">I Am Leo.</h2>
+            <h2 className="font-weight-bold hello-text fr-60">Hello,</h2>
+            <h2 className="font-weight-bold name-text fr-90">I Am Leo.</h2>
             <h5 className="font-weight-bold primary-color-2 title-text">Front-end developer</h5>
             <div className="description-text">
               Front-end Developer with over 2 years of experience. Experienced with JavaScript and React framework.
@@ -90,7 +96,7 @@ function HomePage() {
         
         
       </div>
-      {/* <div className="shape1-container">
+      <div className="shape1-container">
         <SVGComponents.Shape1 className="shape1-svg" />
       </div>
       <div className="shape2-container">
@@ -98,7 +104,7 @@ function HomePage() {
       </div>
       <div className="shape3-container">
         <SVGComponents.Shape3 className="shape3-svg" />
-      </div> */}
+      </div>
       <div ref={aboutPageRef}>
         <AboutPage/>
       </div>

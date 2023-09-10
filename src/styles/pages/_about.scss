@@ -113,6 +113,10 @@
             font-weight: bold;
         }
 
+        .company-position{
+            width: 300px;
+        }
+
         .company-txt{
             font-size: 14px;
             color: #dd584f;
@@ -183,6 +187,69 @@
         height: 100%;
         fill: #48c5ea;
     }
+}
+
+@media (max-width: 992px) {
+    .about-page-wrapper{
+        .skills-section{
+            height: 500px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            
+            .swiper-button-prev{
+                left: -16px;
+                transform: scale(0.7);
+                &:hover{
+                    transform: scale(0.8, 0.8);
+                }
+            }
+            .swiper-button-next{
+                right: -16px;
+                transform: scale(0.7);
+                &:hover{
+                    transform: scale(0.8, 0.8);
+                }
+            }
+        }
+        .card-item{
+            width: 142px;
+            height: 152px;
+            .logo-react, .logo-javascript, .logo-typescript, .logo-redux, .logo-html, .logo-css, .logo-jest, .logo-git{
+                width: 48px;
+                height: 48px;
+            }
+        }
+        .we-item{
+            flex-wrap: wrap;
+            padding: 20px 20px;
+
+            .company-position{
+                width: 250px;
+            }
+
+            .item-logo{
+                margin-bottom: 20px;
+            }
+    
+            .period-txt{
+                font-size: 16px;
+                font-weight: bold;
+                width: 250px;
+                margin-bottom: 20px;
+            }
+    
+            .company-txt{
+                font-size: 14px;
+                color: #dd584f;
+            }
+    
+            .position-txt{
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+    }
+    
 }
 
 @keyframes moveUpDown {

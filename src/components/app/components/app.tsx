@@ -1,5 +1,5 @@
 import { Location, Outlet, useLocation, useNavigate } from "react-router-dom";
-import "../../styles/app.scss";
+import "../../../styles/app.scss";
 import TopPane from "./topPane";
 import { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
@@ -35,10 +35,24 @@ library.add(
   faBars
 );
 
-function App() {
+function App(props) {
   const location: Location = useLocation();
   const navigate = useNavigate();
   const { pathname } = location;
+
+  const onResize = (/* event */) => {
+    setTimeout(() => {
+      props.windowResized(window.innerWidth, window.innerHeight);
+    }, 200);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", onResize);
+    onResize();
+    return () => {
+      window.removeEventListener("resize", onResize);
+    };
+  }, []);
 
   useEffect(() => {
     if (pathname === "/") navigate("/home");

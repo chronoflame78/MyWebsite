@@ -599,6 +599,26 @@ body {
   justify-content: space-around;
 }
 
+.dark-yellow{
+  color: #b3a206;
+}
+
+.fr-20{
+  font-size: 20px;
+}
+
+.fr-48{
+  font-size: 48px;
+}
+
+.fr-60{
+  font-size: 60px;
+}
+
+.fr-90{
+  font-size: 90px;
+}
+
 .btn-primary-custom{
   width: fit-content;
   border-radius: 40px;
@@ -614,5 +634,20 @@ body {
   @include media-breakpoint-down(sm){
     padding: 12px 18px;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .fr-20{
+    font-size: 14px;
+  }
+  .fr-48{
+    font-size: 32px;
+  }
+  .fr-60{
+    font-size: 35px;
+  }
+  .fr-90{
+    font-size: 45px;
   }
 }

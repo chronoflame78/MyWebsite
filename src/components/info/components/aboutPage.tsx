@@ -1,7 +1,7 @@
 import { Location, useLocation, useNavigate } from "react-router-dom";
-import * as SVGComponents from "../../styles/svgIcons";
+import * as SVGComponents from "../../../styles/svgIcons";
 import CardItem from "./cardItem";
-import { recentWorkItems, skillItems, workExperienceItems } from "./constant";
+import { recentWorkItems, skillItems, workExperienceItems } from "../constant";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -13,7 +13,11 @@ import 'swiper/css/pagination';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-function AboutPage() {
+interface IProps {
+  isMobileView: boolean,
+}
+
+function AboutPage(props: IProps) {
   const location: Location = useLocation();
   const navigate = useNavigate();
 
@@ -28,15 +32,15 @@ function AboutPage() {
           <div className="w-100 h-100 d-flex flex-direction-column justify-content-evenly pt-4">
             
               <div>
-                <p className="f-20 font-weight-bold text-gray mb-1">MY SKILLS</p>
-                <h2 className="f-60 font-weight-bold pb-4">Technologies.</h2>
+                <p className="fr-20 font-weight-bold text-gray mb-1">MY SKILLS</p>
+                <h2 className="fr-60 font-weight-bold pb-4">Technologies.</h2>
               </div>
               
 
               <div className="position-relative">
                 <Swiper 
                 navigation={true}
-                slidesPerView={4}
+                slidesPerView={props.isMobileView ? 3 : 4 }
                 spaceBetween={36}
                 autoplay={{
                   delay: 2500,
@@ -65,9 +69,7 @@ function AboutPage() {
       <section className="experience-section">
         <div className="container d-flex align-items-center">
           <div className="w-100 d-flex flex-direction-column pt-4 pb-4">
-            
-              
-                <h2 className="f-48 font-weight-bold mb-5 text-center">My Work Experience</h2>
+                <h2 className="fr-48 font-weight-bold mb-5 text-center">My Work Experience</h2>
                 {/* <div className="f-18 font-weight-bold pb-4 d-flex align-items-center justify-content-center w-100">
                   <p className="work-des-txt text-center">Must explain to you how all this mistaken idea of denouncing pleasure born and give you a complete account the system</p>
                 </div> */}
@@ -77,7 +79,7 @@ function AboutPage() {
                     <div key={index} className="we-item">
                         <div className="period-txt">{x.period}</div>
                         <div className="item-logo">{x.logo}</div>
-                        <div className="w-300">
+                        <div className="company-position">
                           <div className="position-txt">{x.position}</div>
                           <div className="company-txt">{x.company}</div>
                         </div>

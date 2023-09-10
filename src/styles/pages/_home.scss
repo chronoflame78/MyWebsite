@@ -2,12 +2,10 @@
     height: 100vh;
     padding-top: 24px;
     .hello-text{
-        font-size: 60px;
         color: #b3a206;
     }
 
     .name-text{
-        font-size: 90px;
         padding-top: 24px;
         padding-bottom: 24px;
     }
@@ -162,12 +160,8 @@
 
         .info-container{
             text-align: center;
-            .hello-text{
-                font-size: 35px;
-            }
         
             .name-text{
-                font-size: 45px;
                 padding-top: 0px;
                 padding-bottom: 0px;
             }
@@ -179,6 +173,7 @@
         
             .description-text{
                 font-size: 15px;
+                line-height: 28px;
                 padding-left: 30px;
                 padding-right: 30px;
             }
@@ -246,15 +241,12 @@
     .shape32-container{
         display: none;
     }
-    // .shape1-container{
-    //     width: 100%;
-    // }
+    .shape1-container{
+        left: -432px;
+    }
     .shape2-container{
-        left: 60%;
-        top: 536px;
+        left: -432px;
+        top: 412px;
         //width: 100%;
     }
-    // .shape3-container{
-    //     width: 100%;
-    // }
 }

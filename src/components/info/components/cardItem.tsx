@@ -6,7 +6,7 @@ function CardItem(props) {
         <div>
           {logo}
         </div>
-        <div className="f-20 font-weight-bold">
+        <div className="fr-20 font-weight-bold">
           {itemName}
         </div>
       </div>

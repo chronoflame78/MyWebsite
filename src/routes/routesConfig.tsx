@@ -1,11 +1,11 @@
 import {
     createBrowserRouter,
 } from "react-router-dom";
-import App from "../components/app/app";
-import ErrorPage from "../components/app/errorPage";
-import HomePage from "../components/home/homePage";
-import AboutPage from "../components/info/aboutPage";
-import ContactPage from "../components/contact/contactPage";
+import App from "../components/app/containers/app";
+import ErrorPage from "../components/app/components/errorPage";
+import HomePage from "../components/home/containers/homePage";
+import AboutPage from "../components/info/components/aboutPage";
+import ContactPage from "../components/contact/components/contactPage";
   
 export const router = createBrowserRouter([
     {
