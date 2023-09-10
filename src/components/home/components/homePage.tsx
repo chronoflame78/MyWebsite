@@ -58,7 +58,7 @@ function HomePage(props: IProps) {
             <h2 className="font-weight-bold name-text fr-90">I Am Leo.</h2>
             <h5 className="font-weight-bold primary-color-2 title-text">Front-end developer</h5>
             <div className="description-text">
-              Front-end Developer with over 2 years of experience. Experienced with JavaScript and React framework.
+              Front-end Developer with over 3 years of experience. Experienced with JavaScript and React framework.
             </div>
             <div className="button-container">
               <button type="button" onClick={() => navigateToAbout()} className="btn btn-primary-custom font-weight-bold d-flex align-items-center">
