@@ -42,7 +42,7 @@ function AboutPage(props: IProps) {
                 navigation={true}
                 slidesPerView={props.isMobileView ? 3 : 4 }
                 spaceBetween={36}
-                autoplay={{
+                autoplay={props.isMobileView ? false : {
                   delay: 2500,
                   disableOnInteraction: false,
                 }}
@@ -96,9 +96,9 @@ function AboutPage(props: IProps) {
 
                 <div className="w-100">
                 <Swiper
-                  slidesPerView={4}
+                  slidesPerView={props.isMobileView ? 3 : 4}
                   spaceBetween={36}
-                  autoplay={{
+                  autoplay={props.isMobileView ? false : {
                     delay: 2500,
                     disableOnInteraction: false,
                   }}

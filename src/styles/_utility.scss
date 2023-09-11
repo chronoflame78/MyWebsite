@@ -599,12 +599,12 @@ body {
   justify-content: space-around;
 }
 
-.dark-yellow{
-  color: #b3a206;
-}
-
 .fr-20{
   font-size: 20px;
+}
+
+.fr-24{
+  font-size: 24px;
 }
 
 .fr-48{
@@ -640,6 +640,9 @@ body {
 @media (max-width: 992px) {
   .fr-20{
     font-size: 14px;
+  }
+  .fr-24{
+    font-size: 18px;
   }
   .fr-48{
     font-size: 32px;

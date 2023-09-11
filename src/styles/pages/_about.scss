@@ -211,6 +211,9 @@
                 }
             }
         }
+        .experience-section{
+            height: 1080px;
+        }
         .card-item{
             width: 142px;
             height: 152px;
@@ -239,14 +242,28 @@
             }
     
             .company-txt{
-                font-size: 14px;
+                font-size: 13px;
                 color: #dd584f;
+                margin-bottom: 10px;
             }
     
             .position-txt{
                 font-size: 16px;
                 font-weight: bold;
             }
+
+            .website-link{
+                font-size: 14px;
+            }
+        }
+        
+        .recent-work-item{
+            .name-text{
+                font-size: 14px;
+            }
+        }
+        .re-Swiper{
+            padding-bottom: 20px;
         }
     }
     

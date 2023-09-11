@@ -95,11 +95,11 @@ function ContactPage() {
   return (
     <div className="contact-page-wrapper">
       <section className="container contact-section">
-        <h2 className="f-48 font-weight-bold pb-5">Contact.</h2>
+        <h2 className="fr-48 font-weight-bold pb-5">Contact.</h2>
         <div className="contact-section-content">
           <div className="sub-section-1">
             <div className="form-container p-4 w-100">
-              <div className="text-center f-24 font-weight-bold pb-4">
+              <div className="text-center fr-24 font-weight-bold pb-4">
                 Get in touch
               </div>
               <form className="w-100" onSubmit={handleSubmit}>

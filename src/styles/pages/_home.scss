@@ -1,4 +1,10 @@
 .home-page-wrapper{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.home-page-section{
     height: 100vh;
     padding-top: 24px;
     .hello-text{
@@ -29,10 +35,10 @@
         left: 120px;
         bottom: 40px;
 
-        @media (max-height: 800px) or (max-width: 1480px) {
-            width: 470px;
-            height: 470px;
-        }
+        // @media (max-height: 800px) or (max-width: 1480px) {
+        //     width: 470px;
+        //     height: 470px;
+        // }
     }
 
     .logo-container{
@@ -147,7 +153,7 @@
 }
 
 @media (max-width: 992px) {
-    .home-page-wrapper{
+    .home-page-section{
         height: auto;
         align-items: center;
         padding-top: 110px;
@@ -196,23 +202,23 @@
         }
     
         .react-logo-container{
-            top: 56px;
-            left: 82px;
+            top: 20px;
+            left: 0px;
         }
 
         .js-logo-container{
-            top: 78px;
-            left: 320px;
+            top: 40px;
+            left: 246px;
         }
 
         .redux-logo-container{
-            top: 270px;
-            left: 286px;
+            top: 228px;
+            left: 212px;
         }
 
         .sass-logo-container{
-            top: 240px;
-            left: 78px;
+            top: 222px;
+            left: 20px;
         }
     
         .logo-container{
@@ -242,11 +248,6 @@
         display: none;
     }
     .shape1-container{
-        left: -432px;
-    }
-    .shape2-container{
-        left: -432px;
-        top: 412px;
-        //width: 100%;
+        display: none;
     }
 }

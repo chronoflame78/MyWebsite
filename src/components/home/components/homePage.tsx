@@ -51,66 +51,72 @@ function HomePage(props: IProps) {
 
   return (
     <>
-      <div className="container d-flex align-items-center home-page-wrapper">
-        <div className="row w-100">
-          <div className="d-flex flex-direction-column col-sm-12 info-container">
-            <h2 className="font-weight-bold hello-text fr-60">Hello,</h2>
-            <h2 className="font-weight-bold name-text fr-90">I Am Leo.</h2>
-            <h5 className="font-weight-bold primary-color-2 title-text">Front-end developer</h5>
-            <div className="description-text">
-              Front-end Developer with over 3 years of experience. Experienced with JavaScript and React framework.
-            </div>
-            <div className="button-container">
-              <button type="button" onClick={() => navigateToAbout()} className="btn btn-primary-custom font-weight-bold d-flex align-items-center">
-                More about me <FontAwesomeIcon className="ml-3" icon="arrow-right" size="1x" color="#ffffff" />
-              </button>
-            </div>
-          </div>
-          <div className="col-sm-12 image-container">
-            <img className="main-image" src={myImage} alt=""/>
-            <div className="react-logo-container logo-container">
-              <div className="bg-container">
-                <SVGComponents.LogoReact className="react-logo"/>
+      <div className="home-page-wrapper">
+        <section className="container d-flex align-items-center home-page-section">
+          <div className="row w-100">
+            <div className="d-flex flex-direction-column col-sm-12 info-container">
+              <h2 className="font-weight-bold hello-text fr-60">Hello,</h2>
+              <h2 className="font-weight-bold name-text fr-90">I Am Leo.</h2>
+              <h5 className="font-weight-bold primary-color-2 title-text">Front-end developer</h5>
+              <div className="description-text">
+                Front-end Developer with over 3 years of experience. Experienced with JavaScript and React framework.
+              </div>
+              <div className="button-container">
+                <button type="button" onClick={() => navigateToAbout()} className="btn btn-primary-custom font-weight-bold d-flex align-items-center">
+                  More about me <FontAwesomeIcon className="ml-3" icon="arrow-right" size="1x" color="#ffffff" />
+                </button>
               </div>
             </div>
-            <div className="js-logo-container logo-container">
-              <div className="bg-container">
-                <SVGComponents.LogoJS className="js-logo"/>
+            <div className="col-sm-12 image-container">
+              <div className="position-relative">
+                <img className="main-image" src={myImage} alt=""/>
+                <div className="react-logo-container logo-container">
+                <div className="bg-container">
+                  <SVGComponents.LogoReact className="react-logo"/>
+                </div>
               </div>
-            </div>
-            <div className="redux-logo-container logo-container">
-              <div className="bg-container">
-                <SVGComponents.LogoRedux className="redux-logo"/>
+              <div className="js-logo-container logo-container">
+                <div className="bg-container">
+                  <SVGComponents.LogoJS className="js-logo"/>
+                </div>
               </div>
-            </div>
-            <div className="sass-logo-container logo-container">
-              <div className="bg-container">
-                <SVGComponents.LogoSass className="sass-logo"/>
+              <div className="redux-logo-container logo-container">
+                <div className="bg-container">
+                  <SVGComponents.LogoRedux className="redux-logo"/>
+                </div>
               </div>
+              <div className="sass-logo-container logo-container">
+                <div className="bg-container">
+                  <SVGComponents.LogoSass className="sass-logo"/>
+                </div>
+              </div>
+              </div>
+              
+              
+              
+              
             </div>
-            
-            
-          </div>
 
+          </div>
+          
+          
+        </section>
+        <div className="shape1-container">
+          <SVGComponents.Shape1 className="shape1-svg" />
         </div>
-        
-        
-      </div>
-      <div className="shape1-container">
-        <SVGComponents.Shape1 className="shape1-svg" />
-      </div>
-      <div className="shape2-container">
-        <SVGComponents.Shape2 className="shape2-svg" />
-      </div>
-      <div className="shape3-container">
-        <SVGComponents.Shape3 className="shape3-svg" />
+        <div className="shape2-container">
+          <SVGComponents.Shape2 className="shape2-svg" />
+        </div>
+        <div className="shape3-container">
+          <SVGComponents.Shape3 className="shape3-svg" />
+        </div>
       </div>
       <div ref={aboutPageRef}>
-        <AboutPage/>
-      </div>
-      <div ref={contactPageRef}>
-        <ContactPage/>
-      </div>
+          <AboutPage/>
+        </div>
+        <div ref={contactPageRef}>
+          <ContactPage/>
+        </div>
     </>
   )
 }
