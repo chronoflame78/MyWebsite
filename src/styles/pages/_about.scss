@@ -212,7 +212,7 @@
             }
         }
         .experience-section{
-            height: 1080px;
+            height: fit-content;
         }
         .card-item{
             width: 142px;
@@ -259,11 +259,11 @@
         
         .recent-work-item{
             .name-text{
-                font-size: 14px;
+                font-size: 13px;
             }
         }
         .re-Swiper{
-            padding-bottom: 20px;
+            padding-bottom: 50px;
         }
     }
     

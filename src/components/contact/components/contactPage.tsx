@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import resumeImg from '../../../assets/resume.png';
 
 const initialFormData = {
   name: "",
@@ -98,7 +99,7 @@ function ContactPage() {
         <h2 className="fr-48 font-weight-bold pb-5">Contact.</h2>
         <div className="contact-section-content">
           <div className="sub-section-1">
-            <div className="form-container p-4 w-100">
+            <div className="form-container h-100 p-4 w-100">
               <div className="text-center fr-24 font-weight-bold pb-4">
                 Get in touch
               </div>
@@ -156,11 +157,14 @@ function ContactPage() {
             </div>
           </div>
           <div className="d-flex flex-direction-column sub-section-2">
-            <div className="download-resume-container p-4 mb-5">
-              <div className="f-24 font-weight-bold text-center pb-4">
+            <div className="download-resume-container h-100 p-4">
+              <div className="fr-24 font-weight-bold text-center pb-4">
                 Download my resume
               </div>
-              <div className="w-100 d-flex justify-content-center">
+              <div className="d-flex justify-content-center pb-4">
+                <img className="resume-image" src={resumeImg} alt=""/>
+              </div>
+              <div className="w-100 d-flex justify-content-center pb-4">
                 <button
                   type="button"
                   onClick={() => {window.open("https://drive.google.com/uc?id=1E9fI2BmchUs9evpHLtmk6irxquzyHpkk&export=download", "_blank")}}
@@ -175,12 +179,14 @@ function ContactPage() {
                   />
                 </button>
               </div>
-            </div>
-            
-            <div className="social-contacts-container p-4">
-              <div className="d-flex align-items-center justify-content-around">
+              <div className="fr-24 font-weight-bold text-center pb-3">OR</div>
+              <div className="fr-20 font-weight-bold text-center pb-2" style={{lineHeight: "24px"}}>Contact me through</div>
+                <div className="d-flex align-items-center justify-content-center pb-1">
+                  <span className="fr-16 font-weight-medium">nhatnhse05539@gmail.com</span> 
+                </div>
+              <div className="d-flex align-items-center justify-content-center py-3">
                 <span
-                 className="social-icon"
+                 className="social-icon mr-4"
                   onClick={() => {
                     window.open(
                       "https://www.linkedin.com/in/nhatnguyen998/",
@@ -191,15 +197,15 @@ function ContactPage() {
                   <FontAwesomeIcon
                     className="h-cursor"
                     icon={["fab", "linkedin"]}
-                    size="3x"
+                    size="2x"
                     color="#0a63bc"
                   />
                 </span>
                 <span
-                  className="social-icon"
+                  className="social-icon mr-4"
                   onClick={() => {
                     window.open(
-                      "https://join.skype.com/invite/VqYJ8d84d047",
+                      "https://join.skype.com/invite/sBpSXcrXXoHd",
                       "_blank"
                     );
                   }}
@@ -207,7 +213,7 @@ function ContactPage() {
                   <FontAwesomeIcon
                     className="h-cursor"
                     icon={["fab", "skype"]}
-                    size="3x"
+                    size="2x"
                     color="#01aee7"
                   />
                 </span>
@@ -220,26 +226,11 @@ function ContactPage() {
                   <FontAwesomeIcon
                     className="h-cursor"
                     icon={["fab", "github"]}
-                    size="3x"
+                    size="2x"
                     color="#1a1e22"
                   />
                 </span>
               </div>
-              {/* <div className="d-flex align-items-center justify-content-center pt-4">
-                <span>
-                  <FontAwesomeIcon className="mr-2" icon="envelope" size="2x" />
-                </span>
-                <span className="f-20 font-weight-medium">
-                  nhatnhse05539@gmail.com
-                </span>
-              </div> */}
-            </div>
-
-            <div className="email-address-container p-4 mt-5">
-                <div className="f-20 font-weight-bold text-center pb-3">Contact my email</div>
-                <div className="d-flex align-items-center justify-content-center">
-                  <span className="f-16 font-weight-medium">nhatnhse05539@gmail.com</span> 
-                </div>
             </div>
           </div>
         </div>

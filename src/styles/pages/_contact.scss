@@ -6,10 +6,12 @@
         display: flex;
         .sub-section-1{
             width: 60%;
+            height: 620px;
         }
         .sub-section-2{
             width: 40%;
             padding-left: 24px;
+            height: 620px;
         }
     }
 
@@ -38,17 +40,11 @@
     .download-resume-container{
         box-shadow: 0 2px 10px rgba(14,29,44,.15);
         border-radius: 5px;
-    }
 
-    .social-contacts-container{
-        box-shadow: 0 2px 10px rgba(14,29,44,.15);
-        border-radius: 5px;
-        justify-content: space-around;
-    }
-
-    .email-address-container{
-        box-shadow: 0 2px 10px rgba(14,29,44,.15);
-        border-radius: 5px;
+        .resume-image{
+            width: 150px;
+            border: 1px solid #ececec;
+        }
     }
 
     .social-icon{
@@ -69,6 +65,7 @@
             .sub-section-2{
                 width: 100%;
                 padding-left: 0px;
+                margin-top: 20px;
             }
         }
     }
