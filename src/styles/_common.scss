@@ -39,4 +39,38 @@
         background-color: #138aa9;
         cursor: pointer;
     }
+    .mobile-menu{
+        background-color: #1e1e1e;
+        width: 50vw;
+        padding-left: 24px;
+        padding-right: 24px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+
+        .menu-item{
+            color: #88888888;
+            cursor: pointer;
+
+            &:hover{
+                color: #ffffff;
+                font-weight: 500;
+            }
+        }
+    }
+    .close-menu-button{
+        border: 1px solid #ffffff;
+        padding: 4px 8px;
+        background-color: #1e1e1e;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 992px) {
+    .top-pane{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }

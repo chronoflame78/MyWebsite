@@ -1,6 +1,6 @@
 import { Location, Outlet, useLocation, useNavigate } from "react-router-dom";
 import "../../../styles/app.scss";
-import TopPane from "./topPane";
+import TopPane from "../containers/topPane";
 import { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -12,6 +12,7 @@ import {
   faEnvelope,
   faDownload,
   faBars,
+  faXmark
 } from "@fortawesome/free-solid-svg-icons";
 import {
   fab,
@@ -32,7 +33,8 @@ library.add(
   fab,
   far,
   faDownload,
-  faBars
+  faBars,
+  faXmark
 );
 
 function App(props) {
