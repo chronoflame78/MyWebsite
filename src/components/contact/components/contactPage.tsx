@@ -91,8 +91,6 @@ function ContactPage() {
   const emailError = formData.errors.find((x) => x.field === "email");
   const messageError = formData.errors.find((x) => x.field === "message");
 
-  console.log(formData.errors);
-
   return (
     <div className="contact-page-wrapper">
       <section className="container contact-section">

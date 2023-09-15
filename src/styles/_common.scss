@@ -54,6 +54,11 @@
             color: #88888888;
             cursor: pointer;
 
+            &.active{
+                color: #ffffff;
+                font-weight: 500;
+            }
+
             &:hover{
                 color: #ffffff;
                 font-weight: 500;

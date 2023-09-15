@@ -53,7 +53,27 @@ function TopPane(props) {
 
   const onMenuItemClick = path => {
     navigate(path);
+
     toggleMenu(false);
+
+    let element;
+    switch(path){
+      case HOME_PATH:
+        element = document.getElementById("home-page-element");
+        element?.scrollIntoView({block: "start", inline: "nearest", behavior: "smooth" });
+        break;
+      case ABOUT_PATH:
+        element = document.getElementById("about-page-element");
+        element?.scrollIntoView({block: "start", inline: "nearest", behavior: "smooth" });
+        break;
+      case CONTACT_PATH:
+        element = document.getElementById("contact-page-element");
+        element?.scrollIntoView({block: "start", inline: "nearest", behavior: "smooth" });
+        break;
+      default:
+        break;
+    } 
+
   }
 
  
@@ -127,9 +147,9 @@ function TopPane(props) {
           </button>
         </div>
 
-        <div className="menu-item py-12" onClick={() => onMenuItemClick(HOME_PATH)}>Home</div>
-        <div className="menu-item py-12" onClick={() => onMenuItemClick(ABOUT_PATH)}>About</div>
-        <div className="menu-item py-12" onClick={() => onMenuItemClick(CONTACT_PATH)}>Contact</div>
+        <div className={classNames("menu-item py-12", {"active": pathname === HOME_PATH})} onClick={() => onMenuItemClick(HOME_PATH)}>Home</div>
+        <div className={classNames("menu-item py-12", {"active": pathname === ABOUT_PATH})} onClick={() => onMenuItemClick(ABOUT_PATH)}>About</div>
+        <div className={classNames("menu-item py-12", {"active": pathname === CONTACT_PATH})} onClick={() => onMenuItemClick(CONTACT_PATH)}>Contact</div>
       </div>}
     </div>
   );
