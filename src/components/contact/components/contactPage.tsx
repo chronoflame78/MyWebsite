@@ -102,7 +102,7 @@ function ContactPage() {
                 Get in touch
               </div>
               <form className="w-100" onSubmit={handleSubmit}>
-                <div className="pb-4">
+                <div className="pb-4 position-relative">
                   <input
                     type="text"
                     id="name"
@@ -113,10 +113,10 @@ function ContactPage() {
                     className="custom-input w-100"
                   />
                   {!!nameError && (
-                    <div className="error pt-2">{nameError.message}</div>
+                    <div className="error err-msg pt-2">{nameError.message}</div>
                   )}
                 </div>
-                <div className="pb-4">
+                <div className="pb-4 position-relative">
                   <input
                     type="email"
                     id="email"
@@ -127,10 +127,10 @@ function ContactPage() {
                     className="custom-input w-100"
                   />
                   {!!emailError && (
-                    <div className="error pt-2">{emailError.message}</div>
+                    <div className="error err-msg pt-2">{emailError.message}</div>
                   )}
                 </div>
-                <div className="pb-4">
+                <div className="pb-4 position-relative">
                   <textarea
                     id="message"
                     name="message"
@@ -140,7 +140,7 @@ function ContactPage() {
                     className="custom-input custom-text-area w-100"
                   />
                   {!!messageError && (
-                    <div className="error pt-2">{messageError.message}</div>
+                    <div className="error err-msg pt-2">{messageError.message}</div>
                   )}
                 </div>
                 <div className="w-100 d-flex justify-content-center">

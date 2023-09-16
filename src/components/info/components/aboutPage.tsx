@@ -35,6 +35,10 @@ function AboutPage(props: IProps) {
               <h2 className="fr-60 font-weight-bold pb-4">Technologies.</h2>
             </div>
 
+            <div className="description-text">
+              Proficient in HTML/CSS, Javascript, React. Extensive experience with front-end libraries and tools including Bootstrap, SCSS, and TypeScript...
+            </div>
+
             <div className="position-relative">
               <Swiper
                 navigation={true}

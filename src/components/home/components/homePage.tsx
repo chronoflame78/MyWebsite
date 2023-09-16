@@ -56,8 +56,9 @@ function HomePage(props: IProps) {
                 Front-end developer
               </h5>
               <div className="description-text">
-                Front-end Developer with over 3 years of experience. Experienced
-                with JavaScript and React framework.
+              Experienced Front-end Developer with 3+ years of expertise in
+JavaScript and React. Skilled in responsive design and creating
+dynamic single-page web applications.
               </div>
               <div className="button-container">
                 <button
